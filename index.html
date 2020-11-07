@@ -1,30 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Educalia</title>
-
-<link rel="stylesheet" href="mystyle.css">
-<link rel="stylesheet" type="text/css" href="mystyle.css" media="screen"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
 </head>
 <body>
-<div class="top-nav-bar">
-<div class="search-box">
-<img src="C:\Users\pradh\Pictures\sbw.jpg" class="logo">
-<input type="text" class="form-control">
-<span class="input-group-text"><i class="fa fa-search"></i></span>
-<div class="menu-bar">
-<ul>
-<li><a href="#"><i class="fas fa-shopping-cart"></i>Shopping Cart</a></li>
-<li><a href="#">Sign Up</a></li>
-<li><a href="#">Log In</a></li>
-</ul>
-    </div>
-    </div>
-    </div>
     
-<h1>Educalia</h1>
-<p>A website created by Dimas, Amit, Lolav, Nathalia, Rui, Yuhao.</p>
+<div class="header">
+<div class="container"></div>
+<div class="navbar">
+    <div class="logo">
+        <img src="images/logo2.png" width="250px">
+    </div>
+    <nav>
+    <ul id="MenuItems"> 
+        <li><a href="">Home</a></li>   
+        <li><a href="">Courses</a></li>   
+        <li><a href="">Tutors</a></li>   
+        <li><a href="">About Educalia</a></li>    
+        <li><a href="">Contact Educalia</a></li>
+        </ul>
+    </nav>
+    <img src="images/cart.png" width="30px" height="30px">
+     <img src="images/menu.png" class="menu-icon" 
+          onclick="menutoggle()">
+    </div>
+    <div class="row">
+    <div class="col-2">
+        <h1>Educalia;<br>From Students to Students</h1>
+        <p>Providing affordable bridge to education for students worldwide.</p>
+        <a href="" class="btn">Join Now &#x2794;</a></div>
+        <div class="col-2">
+            <img src="images/picture4.jpg">
+        </div>
+    </div>
+    </div>
+
+<!----- featured categories ------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-3">
+                <img src="images/picture1.jpg">
+            </div>"
+         <div class="col-3">
+             <img src="images/picture2.jpg">
+        </div>
+         <div class="col-3">
+             <img src="images/picture3.jpg">
+        </div>
+        </div>
+        </div>
+        
+    </div>
+<!----- featured products ----->
+    <div class="small-container">
+    <h2 class="title">Featured Courses</h2>
+    <div class="row">
+        <div class="col-4">
+                    <img src="images/Leadership.jpg">
+            <h4>Agile Development Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        <div class="col-4">
+                    <img src="images/lolav.jpg">
+            <h4>Web Programming Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        <div class="col-4">
+                    <img src="images/nath.jpg">
+            <h4>Application Programming Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        <div class="col-4">
+                    <img src="images/amit.jpg">
+            <h4>Business and Financial Planning Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        </div>
+        <h2 class="title">Latest Courses</h2>
+         <div class="row">
+        <div class="col-4">
+                    <img src="images/Leadership.jpg">
+            <h4>Agile Development Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        <div class="col-4">
+                    <img src="images/lolav.jpg">
+            <h4>Web Programming Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        <div class="col-4">
+                    <img src="images/nath.jpg">
+            <h4>Application Programming Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        <div class="col-4">
+                    <img src="images/amit.jpg">
+            <h4>Business and Financial Planning Course</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        <p>$20.00</p>
+        </div>
+        </div>
+    </div>
+<!----- offer ----->
+    <div class="offer">
+    <div class="small-container">
+        <div class="row">
+        <div class="col-2">
+            <img src="images/exclusivedeal.jpg" class="offer-img">
+            </div>
+        <div class="col-2">
+            <p> Exclusive Deal on Educalia</p>
+            <h1>All Course Package</h1>
+            <small>Educalia offers all of the courses we have available with a very limited special price!</small>
+            <a href="" class="btn">Purchase Now &#8594; </a>
+             </div></div></div></div>
+    
+    <!----- testimonial ----->
+    <div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>  
+            <p>Educalia + Me = Good.</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <img src="images/albert.jpg">
+                <h3>Albert</h3>
+            </div>
+        <div class="col-3">
+                <i class="fa fa-quote-left"></i>  
+            <p>Thanks Educalia, I'm going to get rich now!</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <img src="images/jeff.jpg">
+                <h3>Jeff</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>  
+            <p>Educalia is FAKE NEWS!</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>   
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <img src="images/donald.jpg">
+                <h3>Donald</h3>
+        </div>
+        </div>
+        </div>
+        
+<!---------- brands ---------->
+        <div class="sponsors">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-5">
+                <img src="images/logo-oppo.png">
+                     </div>
+             <div class="col-5">
+                <img src="images/logo-coca-cola.png">
+                     </div>
+                 <div class="col-5">
+                <img src="images/logo-godrej.png">
+                     </div>
+                 <div class="col-5">
+                <img src="images/logo-paypal.png">
+                     </div>
+            </div></div></div>
+        
+<!----------footer---------->
+        <div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App!</h3>
+                <p>Download the Officiial Educalia App for your Android and IOS mobile phone!</p>
+                <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+                </div>
+                </div>
+                 <div class="footer-col-2">
+                     <img src="images/logo-white.png">
+                <p>We strive to make education a basic human right for everyone, everywhere</p>
+                </div>
+                 <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                     </ul>
+                </div>
+                <div class="footer-col-4">
+                <h3>Follow Us On:</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+                </div>
+            </div>
+<!----------js for toggle menu---------->
+            <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+            }
+            </script>
+            <hr>
+            <p class="copyright">Copyright 2020 - Educalia</p>
+                </div>
+        </div>
+</body>
+</html>
